@@ -1,0 +1,28 @@
+1. Go to /etc/apache2/apache2.conf. Add the directory directives:
+<Directory /var/www>
+	Options Indexes FollowSymLinks
+	AllowOverride None
+	Require all granted
+</Directory>
+
+<Directory /var/www/html/foobank>
+	Require all denied
+</Directory>
+
+<Directory /var/www/html/foobank/controllers>
+	Require all granted
+</Directory>
+
+<Directory /var/www/html/foobank/view>
+	Require all granted
+</Directory>
+
+2. Go to /etc/php5/apache2/php.ini. Add the following lines at the end of the file
+
+session.cookie_lifetime=0
+session.use_strict_mode=On
+session.cookie_httponly=On
+session.cookie_secure=On
+session.cache_limiter=nocache
+session.use_only_cookies=On
+

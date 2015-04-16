@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    border-spacing: 5px
+}
+
+th {
+    height: 20px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    
+} 
+
+td  {
+    padding: 5px;
+   
+}

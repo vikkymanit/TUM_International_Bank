@@ -1,0 +1,71 @@
+table {
+    width: 100%;
+    border-spacing: 5px
+}
+
+th {
+    height: 20px;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    
+} 
+
+td  {
+    padding: 5px;
+   
+}
+
+caption {
+    font-size: 20px;
+font-weight: normal;
+    
+}
+section#landingPage {
+background-color: rgb(230,230,250);
+border: 1px solid rgba(0,0,0,.15);
+border-radius: 4px;
+box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 0 4px rgba(0,0,0,0.2);
+margin: 40px auto; /*aligns center*/
+padding: 12px;
+width: 1000px;
+}
+/*BUTTON DESIGN*/
+[class*='btn-'] {
+border: none;
+border-bottom: 2px solid rgba(0,0,0,.15);
+border-top: 1px solid rgba(255,255,255,.15);
+border-radius: 3px;
+color: #fff;
+display: inline-block;
+font: -webkit-small-control;
+font-size: .7em;
+letter-spacing: 1px;
+line-height: 140%;
+padding: 10px 20px;
+text-decoration: none;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+text-transform: uppercase;
+-webkit-transition: all 0.1s linear;
+-moz-transition: all 0.1s linear;
+-o-transition: all 0.1s linear;
+transition: all 0.1s linear;
+}
+.btn-minimal {
+background-color: rgb(255,255,255);
+border-radius: 0;
+border: 1px solid rgb( 186, 186, 186 );
+color: rgb( 186, 186, 186 );
+text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+}
+.btn-minimal:hover {
+background-color: #4195fc;
+border: 1px solid rgba(0,0,0,.1);
+color: rgb(255,255,255);
+cursor: pointer;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.btn-minimal:active {
+box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}

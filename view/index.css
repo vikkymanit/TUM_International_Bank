@@ -1,0 +1,37 @@
+iFrame
+{
+    width:580px; 
+    height:500px;
+    float:right;
+    border: none;
+    
+    
+}
+h1{
+    text-align:center;
+}
+body
+{
+    background-color:  rgb(230,230,250);
+    position:fixed; 
+
+    top:0;left:0;
+}
+p{
+    height: auto;
+    width: 480px;
+    font-style: italic;
+} 
+    
+.login{
+    float: right;
+    width: 580px;
+}
+.content{
+    float: left;
+margin-right: 150px;
+}
+img{
+    width:400px; /* you can use % */
+    height:auto;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-FRAME-OPTIONS" content="DENY"> 
+<script type="text/javascript" src="validate.js"></script>
+<title>Sign UP</title>
+<link rel="stylesheet" href="signup.css" type="text/css" />
+</head>
+<body id="index">
+	<div id="container">
+		<div id="header">
+			<h1>Sign Up</h1>
+		</div>
+		<div id="main">
+			<form name="signup" action="../controllers/signup.php"
+				onsubmit="return validateForm();" method="post">
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td class="form-input-name">UserID</td>
+						<td class="input"><input type="text" name="username"
+							id="username" placeholder="Username between 9 and 20 chars"
+							autocomplete="off" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$"
+							required="required" /></td>
+					</tr>
+					<tr>
+						<td class="form-input-name">Full Name</td>
+						<td class="input"><input type="text" name="fullname"
+							id="fullname" placeholder="Your full Name here..."
+							pattern="^[a-zA-Z0-9\s]{2,30}$" autocomplete="off"
+							required="required" /></td>
+					</tr>
+
+
+					<tr>
+						<td class="form-input-name">E-Mail ID</td>
+						<td class="input"><input type="email" name="email" id="email"
+							placeholder="Your email here..." autocomplete="off"
+							required="required" /></td>
+					</tr>
+					<tr>
+						<td class="form-input-name">Password</td>
+						<td class="input"><input type="password" name="password"
+							id="password" placeholder="Min 1 Ucase, Lcase and number"
+							pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+							autocomplete="off" required="required" /></td>
+					</tr>
+					<tr>
+						<td class="form-input-name">Retype Password</td>
+						<td class="input"><input type="password" name="repassword"
+							id="repassword"
+							placeholder="Min 1 Ucase, Lcase and number"
+							pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+							autocomplete="off" required="required" /></td>
+					</tr>
+					<tr>
+						<td class="form-input-name">Transaction authentication</td>
+						<td><select name="tranauth" required>
+								<option value="email">via Email TANs</option>
+								<option value="scs" selected="selected">via SCS</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td class="form-input-name">Role</td>
+						<td><select name="typeselect" required>
+								<option value="user" selected="selected">Customer</option>
+								<option value="employee">Employee</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td class="form-input-name"><input type="button"
+							value="Log In" onclick="location.href='login.html'" /></td>
+						<td><input type="submit" value="Register" align="left" /></td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
